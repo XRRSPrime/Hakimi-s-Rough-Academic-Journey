@@ -41,7 +41,7 @@
 支部代号：<br>
 1：The brave Doro Knight from SJTU<br>
 2：Singlemie from SJTU<br>
-3：Pandaaaaaa from JLU
+3：Pandaaaaaa from JLU<br>
 4：hefeng from CUPL
 ## 七、写给编者
 欢迎各位参与到该笔记的编写当中，请注意以下事项
@@ -51,6 +51,7 @@
 4. 任何人可以在任何笔记下方评论并提出修改意见，或直接联系笔记编者修改
 
 期望我们的笔记能够越做越好！
+
 
 
 
