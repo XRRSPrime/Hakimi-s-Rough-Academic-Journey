@@ -50,7 +50,7 @@ ssh -T git@github.com
 ## 1.3 上传/下拉仓库（clone/pull/push）
 ### 1）下拉仓库(clone)
 ```bash
-git clone git@github.com:YOUR_NAME/YOUR_REPO.git #本段在仓库出点击绿色的code，选择SSH获取
+git clone git@github.com:YOUR_NAME/YOUR_REPO.git #本段在仓库处点击绿色的code，选择SSH获取
 cd YOUR_REPO
 ```
 ### 2）拉取远端更新(pull)
