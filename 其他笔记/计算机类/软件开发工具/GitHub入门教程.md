@@ -292,7 +292,9 @@ git push origin feature/login
 4. 提PR，邀请review。
 5. 通过后merge，自动关闭Issue（若设置了 Closes #id）。
 
->下面会添加一些包括比较、回退在内的额外用法。
+
+
+## 下面会添加一些包括比较、回退在内的额外用法。
 Git的三个核心区域
 1. **工作区(`Working Directory`)**:你平时写代码，编辑文件的地方。
 2. **暂存区(`Staging Area / Index`)**:执行`git add`后，文件存放的中间缓冲区，准备放入下一次提交中。
