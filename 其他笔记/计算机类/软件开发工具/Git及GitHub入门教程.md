@@ -1,4 +1,4 @@
-# GitHub入门教程
+# Git及GitHub入门教程
 支部编码 2026-2-2
 ___
 > 截至2026.3
@@ -361,4 +361,5 @@ Git的三个核心区域
     - 场景：你在本地用`git init`创建了一个全新的仓库，写好代码后，想把它推送到`GitHub 或 GitLab`上。
     - 首先你在`GitHub`获取了仓库地址，然后执行 `git remote add origin https://github.com/xxx/xxx.git`。
     - 之后你就可以直接使用`git push -u origin main`将代码推送到远程了。`origin` 就像是这个长长`URL`的快捷方式
+
 
