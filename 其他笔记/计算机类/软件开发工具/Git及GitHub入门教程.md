@@ -3,6 +3,16 @@
 ___
 > 截至2026.3
 
+
+## 1.0 Git和GitHub简介
+一句话：Git 负责版本控制，GitHub 负责多人协作与托管。
+
+Git的三个核心区域
+1. **工作区(`Working Directory`)**:你平时写代码，编辑文件的地方。
+2. **暂存区(`Staging Area / Index`)**:执行`git add`后，文件存放的中间缓冲区，准备放入下一次提交中。
+3. **本地仓库(Local Repository/HEAD)**:执行`git commit`后，代码被永久保存的区域。当前所在的分支和最后一次提交由`HEAD`指针指向。
+
+用`git clone`把GitHub上的仓库可以克隆到本地，通过`git init`把一个普通仓库变成`Git`仓库，`git add .`把文件上传入暂存区，`git commit`放入提交历史，`git push origin main`正式提交进`GitHub`
 ## 1.1 新建GitHub仓库
 1. 登录 `GitHub`
 2. 右上角 ` + -> New repository `
@@ -12,8 +22,13 @@ ___
 6. 注：如果准备上传本地已有项目，建议不要勾选初始化`README/.gitgnore/License`（避免首次推从冲突）
 7. 点击`Create repository`
 ## 1.2 配置 GitHub SSH
->目的:让`git clone/pull/push`免输账号密码，只需密钥验证
+
+SSH：一种安全的远程登录和管理服务器的协议。
+
+目的:让`git clone/pull/push`免输账号密码，只需密钥验证
+
 ### 第一步： 生成SSH密钥
+
 ```bash
 ssh-keygen -t -C "your_email"@example.com
 ```
@@ -295,10 +310,6 @@ git push origin feature/login
 
 
 ## 下面会添加一些包括比较、回退在内的额外用法。
-Git的三个核心区域
-1. **工作区(`Working Directory`)**:你平时写代码，编辑文件的地方。
-2. **暂存区(`Staging Area / Index`)**:执行`git add`后，文件存放的中间缓冲区，准备放入下一次提交中。
-3. **本地仓库(Local Repository/HEAD)**:执行`git commit`后，代码被永久保存的区域。当前所在的分支和最后一次提交由`HEAD`指针指向。
 
 ### 一.查看修改差异(Diff)
 1. `git diff`
