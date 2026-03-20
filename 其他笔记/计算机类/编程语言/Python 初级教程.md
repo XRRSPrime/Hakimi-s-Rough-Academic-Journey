@@ -1047,7 +1047,32 @@ for 临时变量1,临时变量2 in 字典.items():
    # 转换为列表
    numbers = list(map(int, input("输入多个数字，用空格分隔：").split()))
   ```
-2. print()输出：<a id="print输出"></a>
+  如果我们想用一个input()函数接受多个输入，我们可以使用`map()`函数和`spilt()`方法来进行数据处理。
+  ```python
+   x, y, z = map(int, input().split())
+   print(x + y + z)
+   print(f"{(x + y + z) / 3:.2f}")
+  ```
+  1. map()函数python内置的高阶函数，其格式如下：
+   `map(function, iterable)`
+   第一个参数相当于我们要进行处理的方法，是一个函数，后面的是迭代器，可以理解为我们要处理的对象。
+   值得注意的是，map()函数的返回值是一个一个数据（用function处理过的）。所以若果我们想要整个展出我们的数据，我们要用`list()`方法。
+   ```python
+   print(list(map(int, input("请输入文本：").spilt())))
+   ```
+   这样如果我们输入`1 2 3`，我们就会得到`[1, 2, 3]`这样的输出。
+   当然，map()函数甚至可以处理多个列表：
+   ```python
+   list1 = [1, 2, 3]
+   list2 = [10, 20, 30]
+
+   # 让两个列表对应位置相加
+   sums = list(map(lambda x, y: x + y, list1, list2))
+   # 结果: [11, 22, 33]
+   ```
+  2. `spilt()`方法是string类中的，它可以将字符串转化成列表，`split()`默认会把连续的空格看作一个分隔符，并自动剔除多余的空格。
+   **注意，这里的列表是字符串列表，不一定是我们需要的数据类型，要想进行转换可以使用map()函数**。
+1. print()输出：<a id="print输出"></a>
     1. 简单用法：
       ```python
       print("要输出的内容")
